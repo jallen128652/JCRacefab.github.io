@@ -96,6 +96,13 @@ nav li a:focus {
   color: darkred;
   background-color: red;
 }
+main p a:link {
+  color: red;
+}
+/* visited link */
+main p a:visited {
+  color: red;
+}
 @media screen and (max-width: 1080px) {
   h1 {
     text-align: right;
