@@ -87,7 +87,7 @@ nav li a:focus {
   color: darkred;
   background-color: red;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
   h1 {
     text-align: right;
   }
