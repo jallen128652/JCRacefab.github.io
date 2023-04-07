@@ -97,11 +97,11 @@ nav li a:focus {
   color: darkred;
   background-color: red;
 }
-main p a:link {
+main ul li a:link {
   color: red;
 }
 /* visited link */
-main p a:visited {
+main ul li a:visited {
   color: red;
 }
 footer p a:link {
