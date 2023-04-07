@@ -103,6 +103,13 @@ main p a:link {
 main p a:visited {
   color: red;
 }
+footer p a:link {
+  color: red;
+}
+/* visited link */
+footer p a:visited {
+  color: red;
+}
 @media screen and (max-width: 1080px) {
   h1 {
     text-align: right;
