@@ -126,13 +126,14 @@ footer p a:visited {
   text-align: center;
 }
 .services ul li {
+  font-size: 3rem;
   list-style: none;
   display: inline-block;
   border: 4px solid rgb(104, 4, 4);
   border-radius: 8px;
   background-color: rgb(124, 123, 123);
   color: black;
-  padding: 5px;
+  padding: 10px 8px 5px 8px;
   margin-top: 5px;
   margin-bottom: 5px;
   line-height: 2rem;
