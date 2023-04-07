@@ -114,6 +114,49 @@ footer p a:link {
 footer p a:visited {
   color: red;
 }
+.services {
+  display: block;
+}
+.services ul {
+  border: 4px solid rgb(104, 4, 4);
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+.services ul li {
+  list-style: none;
+  display: inline-block;
+  border: 4px solid rgb(104, 4, 4);
+  border-radius: 8px;
+  background-color: rgb(124, 123, 123);
+  color: black;
+  padding: 20px;
+  line-height: 2rem;
+}
+table {
+  border: 4px solid rgb(104, 4, 4);
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  font-size: 3.5rem;
+}
+th {
+  border: 4px solid rgb(104, 4, 4);
+  padding: 20px;
+  background: rgb(8, 8, 8);
+}
+td {
+  font-size: 3rem;
+  color: black;
+  border: 4px solid rgb(104, 4, 4);
+  padding: 2px;
+  background-color: rgb(124, 123, 123);
+}
 @media screen and (max-width: 1080px) {
   h1 {
     text-align: right;
