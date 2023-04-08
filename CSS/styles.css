@@ -166,6 +166,16 @@ td {
   padding: 2px;
   background-color: rgb(124, 123, 123);
 }
+/* ------------Gallery-------------- */
+.gallery {
+  display: block;
+}
+.gallery h2 {
+  border: 4px solid rgb(104, 4, 4);
+  border-radius: 8px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 /* ------------Responsive----------- */
 @media screen and (max-width: 1080px) {
   h1 {
