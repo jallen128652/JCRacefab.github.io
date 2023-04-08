@@ -200,7 +200,7 @@ video {
   display: block;
 }
 .vid p {
-  margin: 5px;  
+  margin: 5px;
 }
 /* ------------Responsive----------- */
 @media screen and (max-width: 1080px) {

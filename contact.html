@@ -28,14 +28,156 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <form method="get">
+        <div>
+          <ul>
+            <legend>Contact Information</legend>
+            <li>
+              <label for="name">Name:</label>
+              <input name="name" id="name" type="text" />
+            </li>
+            <li>
+              <label for="email">Email:</label>
+              <input
+                name="email"
+                id="email"
+                type="email"
+                required
+                placeholder="me@example.com"
+              />
+            </li>
+            <li>
+              <label for="phone">Phone Number:</label>
+              <input name="phone" id="phone" type="tel" />
+            </li>
+            <li>
+              <label for="url">Website URL:</label>
+              <input name="url" id="url" type="url" />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <legend>Vehicle Information</legend>
+            <li>
+              <label for="color">Color:</label>
+              <input name="color" id="color" type="color" />
+            </li>
+            <li>
+              <label for="brand">What brand of vehicle?</label>
+              <select name="brand" id="brand">
+                <option value="GM">GM</option>
+                <option value="Ford">Ford</option>
+                <option value="Dodge">Dodge</option>
+              </select>
+            </li>
+            <li>
+              <label for="year">What year is your vehicle?</label>
+              <input
+                type="range"
+                id="year"
+                name="year"
+                value="2001"
+                min="1955"
+                max="2023"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+              <output>2001</output>
+            </li>
+            <li>
+              <label for="model">Model:</label>
+              <input name="Model" id="Model" type="text" />
+            </li>
+          </ul>
+
+          <fieldset>
+            <legend>What type of service are you interested in?</legend>
+            <input
+              id="Welding"
+              name="radio"
+              type="radio"
+              value="Welding"
+              checked
+            />
+            <label for="Welding">Welding</label><br />
+            <input
+              id="Fabrication"
+              name="radio"
+              type="radio"
+              value="Fabrication"
+            />
+            <label for="Fabrication">Fabrication</label><br />
+            <input id="Mechanics" name="radio" type="radio" value="Mechanics" />
+            <label for="Mechanics">Mechanics</label><br />
+            <input
+              id="partdesign"
+              name="radio"
+              type="radio"
+              value="partdesign"
+            />
+            <label for="partdesign">Part Design</label><br />
+            <input
+              id="cncmachining"
+              name="radio"
+              type="radio"
+              value="cncmachining"
+            />
+            <label for="cncmachining">CNC Machining</label><br />
+            <input id="cncplasma" name="radio" type="radio" value="cncplasma" />
+            <label for="cncplasma">CNC Plasma</label><br />
+            <input id="3dprint" name="radio" type="radio" value="3dprint" />
+            <label for="3dprint">3D Printing</label>
+          </fieldset>
+          <fieldset>
+            <legend>Do you need additional services?</legend>
+            <input
+              id="ECM Calibration"
+              name="ECM Calibration"
+              type="checkbox"
+              value="ECM Calibration"
+            />
+            <label for="ECM Calibration">ECM Calibration</label><br />
+            <input
+              id="3DScanning"
+              name="3DScanning"
+              type="checkbox"
+              value="3DScanning"
+            />
+            <label for="3DScanning">3D Scanning</label><br />
+            <input
+              id="Powdercoating"
+              name="Powdercoating"
+              type="checkbox"
+              value="Powdercoating"
+            />
+            <label for="Powdercoating">Powdercoating</label><br />
+          </fieldset>
+        </div>
+
+        <label for="textarea">Comments:</label>
+        <textarea name="textarea" id="textarea" cols="25" rows="2"></textarea>
+        <br />
+
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+      </form>
+    </main>
     <footer class="foot">
       <!-- Copyright info -->
       <p>
         Copyright 2023 -
         <a href="mailto:jallen128652@mymail.tstc.edu">James Allen </a
         >&copy;<br />
-        1(800)555-5555
+      </p>
+      <!-- external links -->
+      <p>
+        Follow us on
+        <a href="https://www.facebook.com/JCRacefab">Facebook</a
+        ><img src="Images/facebook-icon-red-30-tiny.png" />
+        or
+        <a href="https://www.instagram.com/jcracefab/">Instagram</a
+        ><img src="Images/Red-Instagram-Logo-tiny.png" />
       </p>
     </footer>
   </body>
