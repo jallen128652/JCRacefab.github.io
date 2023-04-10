@@ -169,6 +169,67 @@ td {
 /* ------------Gallery-------------- */
 .gallery {
   display: block;
+  object-fit: contain;
+}
+.motorsports {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  object-fit: contain;
+}
+.motorsports div {
+  object-fit: contain;
+}
+.fabrication {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  object-fit: contain;
+}
+.fabrication div {
+  object-fit: contain;
+}
+.cad {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  object-fit: contain;
+}
+.cad div {
+  object-fit: contain;
+}
+.cnc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  object-fit: contain;
+}
+.cnc div {
+  object-fit: contain;
+}
+.plasma {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  object-fit: contain;
+}
+.plasma div {
+  object-fit: contain;
+}
+.video {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  object-fit: contain;
+}
+.video div {
+  object-fit: contain;
 }
 .gallery h2 {
   border: 4px solid rgb(104, 4, 4);
