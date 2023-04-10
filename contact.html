@@ -7,7 +7,6 @@
       <!-- Viewport settings to scale for device sizes -->
       <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
       <title></title>
-      <link rel="stylesheet" href="CSS/styles.css" />
       <!-- adding google font link -->
       <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Teko:wght@300&display=swap"
@@ -15,6 +14,149 @@
       />
       <!-- adding favicon -->
       <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+      <!-- internal styling -->
+      <style>
+        html {
+          background-color: black;
+        }
+        body {
+          font-family: "Teko", sans-serif;
+          background-color: rgb(124, 123, 123);
+          color: rgb(204, 8, 8);
+          font-size: 30px;
+          border: 3px solid rgb(139, 0, 0);
+          border-radius: 15px;
+          margin: 10px;
+        }
+        h1 {
+          font-size: 4rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+          font-family: "Orbitron", sans-serif;
+          color: rgb(204, 8, 8);
+          text-align: center;
+        }
+        header {
+          text-align: center;
+          border: 3px solid rgb(139, 0, 0);
+          border-radius: 15px;
+          background-image: url(../Images/banner.jpg);
+          background-size: cover;
+          background-position-y: center;
+          margin: 10px;
+          padding-bottom: 10px;
+        }
+        nav ul {
+          display: flex;
+          justify-content: right;
+          margin-right: 30px;
+        }
+
+        nav ul li {
+          display: inline-flex;
+          font-size: 1.8rem;
+          padding: 10px;
+          background-color: black;
+          border-radius: 6px;
+          margin-right: 5px;
+        }
+        main {
+          display: block;
+          border: 3px solid rgb(139, 0, 0);
+          border-radius: 15px;
+          background-color: rgb(8, 8, 8);
+          color: rgb(204, 8, 8);
+          margin: 10px;
+        }
+        footer {
+          border: 3px solid rgb(139, 0, 0);
+          border-radius: 15px;
+          text-align: center;
+          margin: 10px;
+          background-color: rgb(8, 8, 8);
+        }
+        form {
+          border: 3px solid rgb(139, 0, 0);
+          border-radius: 15px;
+          margin: 15px;
+        }
+        .submit {
+          border: 3px solid rgb(139, 0, 0);
+          border-radius: 15px;
+          margin: 15px;
+          padding: 10px;
+        }
+        .submit button {
+          border-radius: 3px;
+          margin-left: 10px;
+          padding: 5px;
+          background-color: rgb(124, 123, 123);
+        }
+        input {
+          background-color: rgb(124, 123, 123);
+        }
+        #textarea {
+          background-color: rgb(124, 123, 123);
+        }
+        ol {
+          display: inline-block;
+        }
+        legend {
+          border: 3px solid rgb(139, 0, 0);
+          border-radius: 15px;
+          margin: 10px;
+        }
+        fieldset {
+          border: 3px solid rgb(139, 0, 0);
+          border-radius: 15px;
+          margin: 15px;
+        }
+        option {
+          background-color: rgb(124, 123, 123);
+        }
+        #email::placeholder {
+          color: black;
+        }
+        /* unvisited link */
+        nav li a:link {
+          color: red;
+        }
+        /* visited link */
+        nav li a:visited {
+          color: red;
+        }
+        /* mouse over link */
+        nav li a:hover {
+          color: red;
+          background-color: black;
+        }
+        /* click on selected link */
+        nav li a:active {
+          color: red;
+        }
+        /* tabbed to link */
+        nav li a:focus {
+          color: darkred;
+          background-color: red;
+        }
+        main ol li a:link {
+          color: red;
+        }
+        /* visited link */
+        main ol li a:visited {
+          color: red;
+        }
+        footer p a:link {
+          color: red;
+        }
+        /* visited link */
+        footer p a:visited {
+          color: red;
+        }
+      </style>
     </head>
     <header>
       <h1>JCRacefab</h1>
@@ -29,6 +171,7 @@
       </nav>
     </header>
     <main>
+      <h2>Contact us!</h2>
       <form method="get">
         <div>
           <ul>
@@ -72,7 +215,7 @@
                 <option value="Dodge">Dodge</option>
               </select>
             </li>
-            <li>
+            <li class="slider">
               <label for="year">What year is your vehicle?</label>
               <input
                 type="range"
@@ -101,6 +244,7 @@
               checked
             />
             <label for="Welding">Welding</label><br />
+            <span class="radio"></span>
             <input
               id="Fabrication"
               name="radio"
@@ -108,8 +252,10 @@
               value="Fabrication"
             />
             <label for="Fabrication">Fabrication</label><br />
+            <span class="radio"></span>
             <input id="Mechanics" name="radio" type="radio" value="Mechanics" />
             <label for="Mechanics">Mechanics</label><br />
+            <span class="radio"></span>
             <input
               id="partdesign"
               name="radio"
@@ -117,6 +263,7 @@
               value="partdesign"
             />
             <label for="partdesign">Part Design</label><br />
+            <span class="radio"></span>
             <input
               id="cncmachining"
               name="radio"
@@ -124,10 +271,13 @@
               value="cncmachining"
             />
             <label for="cncmachining">CNC Machining</label><br />
+            <span class="radio"></span>
             <input id="cncplasma" name="radio" type="radio" value="cncplasma" />
             <label for="cncplasma">CNC Plasma</label><br />
+            <span class="radio"></span>
             <input id="3dprint" name="radio" type="radio" value="3dprint" />
             <label for="3dprint">3D Printing</label>
+            <span class="radio"></span>
           </fieldset>
           <fieldset>
             <legend>Do you need additional services?</legend>
@@ -138,6 +288,7 @@
               value="ECM Calibration"
             />
             <label for="ECM Calibration">ECM Calibration</label><br />
+            <span class="checkbox"></span>
             <input
               id="3DScanning"
               name="3DScanning"
@@ -145,6 +296,7 @@
               value="3DScanning"
             />
             <label for="3DScanning">3D Scanning</label><br />
+            <span class="checkbox"></span>
             <input
               id="Powdercoating"
               name="Powdercoating"
@@ -152,16 +304,23 @@
               value="Powdercoating"
             />
             <label for="Powdercoating">Powdercoating</label><br />
+            <span class="checkbox"></span>
           </fieldset>
         </div>
+        <div class="submit">
+          <label for="textarea">Comments:</label>
+          <textarea name="textarea" id="textarea" cols="25" rows="2"></textarea>
+          <br />
 
-        <label for="textarea">Comments:</label>
-        <textarea name="textarea" id="textarea" cols="25" rows="2"></textarea>
-        <br />
-
-        <button type="submit">SUBMIT</button>
-        <button type="reset">RESET</button>
+          <button type="submit">SUBMIT</button>
+          <button type="reset">RESET</button>
+        </div>
       </form>
+      <h3>Please give us a follow on Social Media!</h3>
+      <ol>
+        <li><a href="https://www.facebook.com/JCRacefab">Facebook</a></li>
+        <li><a href="https://www.instagram.com/jcracefab/">Instagram</a></li>
+      </ol>
     </main>
     <footer class="foot">
       <!-- Copyright info -->

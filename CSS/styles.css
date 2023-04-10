@@ -78,6 +78,7 @@ header img {
   border-radius: 15px;
   max-width: 99%;
 }
+/* --------------links-------------- */
 /* unvisited link */
 nav li a:link {
   color: red;
