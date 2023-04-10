@@ -171,64 +171,38 @@ td {
   display: block;
   object-fit: contain;
 }
-.motorsports {
+.gallery div {
+  object-fit: contain;
+}
+.gallery figcaption {
+  object-fit: contain;
+  text-align: center;
+  padding-right: 10px;
+  font-size: 1.6rem;
+}
+.gallery p {
+  object-fit: contain;
+  text-align: center;
+}
+.gallery img {
+  object-fit: contain;
+  margin: 15px;
+  border-radius: 8px;
+}
+.gallery video {
+  object-fit: contain;
+}
+.box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   object-fit: contain;
+  border: 4px solid rgb(104, 4, 4);
+  border-radius: 8px;
+  margin: 15px;
 }
-.motorsports div {
-  object-fit: contain;
-}
-.fabrication {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  object-fit: contain;
-}
-.fabrication div {
-  object-fit: contain;
-}
-.cad {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  object-fit: contain;
-}
-.cad div {
-  object-fit: contain;
-}
-.cnc {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  object-fit: contain;
-}
-.cnc div {
-  object-fit: contain;
-}
-.plasma {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  object-fit: contain;
-}
-.plasma div {
-  object-fit: contain;
-}
-.video {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  object-fit: contain;
-}
-.video div {
+.box div {
   object-fit: contain;
 }
 .gallery h2 {
@@ -247,6 +221,7 @@ figure {
 figcaption {
   margin-left: 15px;
   padding: 0;
+  font-size: 1.8rem;
 }
 .vid {
   border: 4px solid rgb(104, 4, 4);
@@ -277,7 +252,11 @@ video {
     font-size: 1.4rem;
   }
 }
-
+@media screen and (max-width: 800px) {
+  table {
+    margin: 5px;
+  }
+}
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 1.65rem;
@@ -293,6 +272,28 @@ video {
     font-size: 0.9rem;
     padding: 3px;
     margin-top: 80px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .gallery img {
+    max-width: 96%;
+    margin: 3%;
+    border-radius: 10px;
+  }
+  .gallery figcaption {
+    font-size: 1.4rem;
+  }
+  table {
+    font-size: 2rem;
+    padding: 5px;
+    margin: 3px;
+  }
+  th {
+    padding: 5px;
+  }
+  video {
+    max-width: 90%;
+    margin: 5px auto;
   }
 }
 /* color package */
